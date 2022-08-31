@@ -1,0 +1,426 @@
+@import url('//db.onlinewebfonts.com/c/1064f0ad1cb65fdab43bb592ddd8aa91?family=Gilroy-Bold');
+@import url('//db.onlinewebfonts.com/c/040a78b437acd0433612f92e61d04a1b?family=Gilroy-Medium');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1110px;
+    padding: 0 80px;
+    margin: 0 auto;
+}
+
+.header {
+    background-color: #fff;
+}
+
+
+/******************************************* MENU STYLES STARTED *************************************/
+
+.menu__links {
+    font-size: 18px;
+    font-family: "Gilroy-Bold";
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu__link {
+    color: #828282;
+    transition: .5s;
+    padding: 32px 0;
+}
+
+.menu__link:hover {
+    color: #000;
+}
+
+.menu__link_col {
+    color: #000;
+    padding: 32px 0;
+}
+
+.menu {
+    position: relative;
+}
+
+.menu::after {
+    content: "";
+    height: 1px;
+    width: 100%;
+    background: #000;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+
+/******************************************* MENU STYLES END! *************************************/
+
+
+/******************************************* INFO STYLES STARTED *************************************/
+
+.info__box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 190px;
+}
+
+.info__surname {
+    width: 200px;
+    font-family: "Gilroy-Bold";
+    font-weight: bold;
+    font-size: 48px;
+    text-align: center;
+    color: #000;
+}
+
+.info__desc {
+    width: 190px;
+    font-family: 'Gilroy-Medium';
+    font-size: 18px;
+    line-height: 22px;
+    color: #070707;
+    margin-top: 60px;
+}
+
+.info__lang {
+    display: flex;
+    transform: rotate(270deg);
+    padding-right: 50px;
+    padding-top: 110px;
+}
+
+.info__ru {
+    padding: 0 10px;
+    color: #828282;
+    transition: 1s;
+    font-family: 'Gilroy Bold';
+}
+
+.info__ru:hover {
+    color: #000;
+}
+
+.info__en {
+    padding: 0 5px;
+    position: relative;
+    font-family: 'Gilroy Bold';
+}
+
+.info__en::before {
+    content: "";
+    width: 2px;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background: #000;
+    margin-left: -3px;
+}
+
+.info-img {
+    text-align: center;
+    padding: 49px 0;
+}
+
+.info-img>img {
+    width: 100%;
+}
+
+
+/******************************************* INFO STYLES END*************************************/
+
+
+/******************************************* ABOUT STYLES STARTED *************************************/
+
+#about-me {
+    background: #F6F6F6;
+    padding: 120px 0 107px;
+}
+
+.about-name {
+    text-align: center;
+    font-family: 'Gilroy-Bold';
+    font-size: 34px;
+    line-height: 42px;
+    text-align: center;
+    color: #070707;
+}
+
+.about-text {
+    max-width: 485px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.about-text-1 {
+    text-align: center;
+    font-family: 'Gilroy-Medium';
+    font-size: 18px;
+    line-height: 22px;
+    color: #070707;
+    padding-top: 17px;
+}
+
+.about-text-2 {
+    font-family: 'Gilroy-Medium';
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    color: #070707;
+    padding-top: 35px;
+}
+
+.about-text-3 {
+    font-family: 'Gilroy-Medium';
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    color: #070707;
+    padding-top: 35px;
+}
+
+
+/******************************************* About STYLES END *************************************/
+
+
+/******************************************* SKILLS STYLES STARTED *************************************/
+
+.skills-title {
+    font-family: 'Gilroy-Bold';
+    font-size: 34px;
+    line-height: 42px;
+    text-align: center;
+    color: #070707;
+    padding-top: 91px;
+}
+
+.skills-text {
+    font-family: 'Gilroy-Medium';
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    color: #070707;
+    padding-top: 69px;
+}
+
+.cards-container {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 82px;
+    padding-bottom: 110px;
+}
+
+.skill-img {
+    width: 81px;
+    height: 80px;
+}
+
+.card-title {
+    font-family: 'Gilroy-Bold';
+    font-size: 20px;
+    line-height: 17px;
+    text-align: center;
+    color: #828282;
+    padding-top: 24px;
+    padding-bottom: 41px;
+}
+
+.bi {
+    width: 50px;
+    height: 50px;
+}
+
+
+/******************************************* SKILLS STYLES END*************************************/
+
+
+/******************************************* Portfolio STYLES STARTED*************************************/
+
+.portfolio {
+    background: #F6F6F6;
+}
+
+.portfolio-title {
+    font-family: 'Gilroy-Bold';
+    font-size: 34px;
+    line-height: 42px;
+    text-align: center;
+    color: #070707;
+    padding-top: 113px;
+}
+
+.portfolio-card {
+    max-width: 936.24px;
+}
+
+.portfolio-img {
+    width: 100%;
+    /* height: 522px; */
+    object-fit: cover;
+}
+
+.portfolio-img-1 {
+    padding-top: 49px;
+    object-position: top;
+}
+
+.portfolio-img-2 {
+    object-position: center;
+}
+
+.portfolio-img-3 {
+    object-position: center;
+}
+
+.portfolio-link {
+    text-align: center;
+    font-family: 'Gilroy-Medium';
+    font-size: 18px;
+    line-height: 22px;
+    text-decoration-line: underline;
+    color: #000000;
+    padding-top: 44px;
+    padding-bottom: 99px;
+}
+
+
+/******************************************* Portfolio STYLES END*************************************/
+
+
+/******************************************* FOOTER STYLES started*************************************/
+
+.footer-title {
+    font-family: 'Gilroy-Bold';
+    font-size: 34px;
+    line-height: 42px;
+    text-align: center;
+    color: #070707;
+    padding-top: 114px;
+    padding-bottom: 21px;
+}
+
+.footer-text {
+    width: 275px;
+    font-family: 'Gilroy-Medium';
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    color: #070707;
+    margin: 0 auto;
+    padding-bottom: 29px;
+}
+
+.footer-btn {
+    font-family: 'Gilroy-Bold';
+    text-align: center;
+    font-size: 18px;
+    line-height: 22px;
+    color: #FFFFFF;
+    border-radius: 45px;
+    background: #070707;
+    padding: 13px 30px 13px;
+    border: none;
+    display: block;
+    margin: 0 auto;
+}
+
+.footer-btn a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.footer-icons {
+    padding-top: 79px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.footer-icons a>img {
+    margin: 0 auto;
+    width: 40px;
+    height: 40px;
+}
+
+.footer-h4 {
+    width: 243px;
+    font-family: 'Gilroy-Medium';
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #828282;
+    padding-top: 45px;
+    padding-bottom: 123px;
+    margin: 0 auto;
+}
+
+
+/* Mobile */
+
+@media screen and (max-width: 767.9px) {
+    .container {
+        padding: 0 30px;
+    }
+    .menu__links {
+        display: none;
+    }
+    .info__box {
+        display: block;
+    }
+    .info__surname {
+        text-align: left;
+    }
+    .info__desc {
+        margin-top: 23px;
+        padding-bottom: 36px;
+    }
+    .info__lang {
+        display: none;
+    }
+    .info-img {
+        background: url('./imageas/BSPP2266.png');
+        width: 316.5px;
+        height: 478px;
+    }
+    .info-img>img {
+        display: none;
+    }
+    .cards-container {
+        display: block;
+    }
+    .card-title {
+        text-align: left;
+    }
+    .card {
+        margin: 0 105px 0;
+    }
+    .card2,
+    .card3,
+    .card4 {
+        margin-top: 70px;
+    }
+    .card1>h4,
+    .card2>h4,
+    .card3>h4,
+    .card4>h4 {
+        text-align: center;
+        ;
+    }
+}
+
+
+/* 
+
+1200px > Desktop >= 992px
+992px > Tablet >= 768px
+768px > Mobile >= 375px
+375px > Small Device
+
+*/

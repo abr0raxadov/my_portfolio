@@ -1,0 +1,340 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap');
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body {
+   background: #f2f2f2;
+   font-family: 'Poppins';
+}
+
+.container {
+   width: 1440px;
+   margin: 0 auto;
+   background: #FFF;
+}
+
+/************************ HEADER - start ************************ */
+
+.header {
+   padding: 48px 165px 222px;
+   background-image: url('./images/illustration-working.svg');
+   background-repeat: no-repeat;
+   background-position: top 166px right -123px;
+   position: relative;
+}
+
+.header-navigation {
+   padding: 0 1px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.menu {
+   display: flex;
+   gap: 45.43px;
+   align-items: center;
+}
+
+.logo {
+   height: 32.64px;
+}
+
+.logo>img {
+   width: 120px;
+   height: 32.64px;
+   object-fit: cover;
+   object-position: center center;
+}
+
+.menu-basic {
+   list-style: none;
+   display: flex;
+   gap: 31px;
+   align-items: center;
+}
+
+.header-navigation a {
+   text-decoration: none;
+   font-weight: 700;
+   font-size: 15px;
+   line-height: 22px;
+   color: #9E9AA8;
+}
+
+.menu-login {
+   list-style: none;
+   display: flex;
+   gap: 37px;
+   align-items: center;
+}
+
+.signup>a {
+   background: #2BD0D0;
+   border-radius: 28px;
+   font-weight: 700;
+   font-size: 15px;
+   line-height: 22px;
+   color: #FFFFFF;
+   padding: 9px 23px 8px 24px;
+}
+
+/**************************** HEADER - end ****************************/
+
+/* navigation - end */
+
+/* hero - start */
+.hero {
+   max-width: 564px;
+   margin-top: 139px;
+}
+
+.hero-title {
+   font-weight: 700;
+   font-size: 80px;
+   line-height: 90px;
+   letter-spacing: -2px;
+   color: #34313D;
+}
+
+.hero-text {
+   font-weight: 500;
+   font-size: 22px;
+   line-height: 36px;
+   letter-spacing: 0.15px;
+   color: #9E9AA8;
+   margin: 5px 0 38px;
+}
+
+.hero-btn {
+   background: #2BD0D0;
+   border-radius: 28px;
+   font-weight: 700;
+   font-size: 20px;
+   line-height: 30px;
+   color: #FFFFFF;
+   border: none;
+   padding: 14px 40px 12px;
+}
+
+/* hero - end */
+
+/* form - start */
+.header-form {
+   width: 1110px;
+   padding: 52px 65px 52px 64px;
+   background: #3A3054;
+   border-radius: 10px;
+   background-image: url('./images/bg-shorten-desktop.svg');
+   position: absolute;
+   left: 50%;
+   bottom: 0;
+   transform: translate(-50%, 50%);
+}
+
+#form-input {
+   background: #FFFFFF;
+   border-radius: 10px;
+   display: inline-block;
+   width: 78.4%;
+   border: none;
+   padding: 14px 32px;
+   font-weight: 500;
+   font-size: 20px;
+   line-height: 36px;
+   letter-spacing: 0.15px;
+   color: #34313D;
+}
+
+#form-input::placeholder {
+   mix-blend-mode: normal;
+   opacity: 0.5;
+}
+
+#form-submit {
+   background: #2BD0D0;
+   border-radius: 10px;
+   border: none;
+   padding: 16px 39px 16px 41px;
+   font-weight: 700;
+   font-size: 20px;
+   line-height: 30px;
+   color: #FFFFFF;
+   margin-left: 22px;
+}
+
+/**********************************              HEADER - end               *******************************************/
+
+/******************************               STATISTICS - start              ******************************/
+
+.statistics {
+   background: #EFF1F7;
+   padding: 204px 165px 120px;
+}
+
+/******************************** statistics-info **************************************/
+.statistics-info {
+   max-width: 540px;
+   margin: 0 auto;
+   text-align: center;
+}
+
+.statistics-title {
+   font-weight: 700;
+   font-size: 40px;
+   line-height: 48px;
+   text-align: center;
+   letter-spacing: -1px;
+   color: #34313D;
+}
+
+.statistics-text {
+   font-weight: 500;
+   font-size: 18px;
+   line-height: 32px;
+   letter-spacing: 0.122727px;
+   color: #9E9AA8;
+   margin-top: 18px;
+}
+
+/**************** statistics-cards ***********************/
+.statistics-cards {
+   display: flex;
+   align-items: center;
+   margin-top: 100px;
+   gap: 30px;
+   min-height: 355px;
+   /* border: 2px solid red; */
+   background-image: linear-gradient(#2BD0D0, #2BD0D0);
+   background-size: 100% 8px;
+   background-repeat: no-repeat;
+   background-position: 0 152px;
+}
+
+.cards-item {
+   background: #FFFFFF;
+   border-radius: 5px;
+   padding: 77px 32px 41px;
+   position: relative;
+}
+
+.cards-item-icon {
+   width: 88px;
+   height: 88px;
+   border-radius: 50%;
+   background-color: #3A3054;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   position: absolute;
+   top: 0;
+   transform: translateY(-50%);
+}
+
+.cards-item-title {
+   font-weight: 700;
+   font-size: 22px;
+   line-height: 33px;
+   color: #34313D;
+   margin-top: 12px;
+}
+
+.cards-item:first-child {
+   align-self: flex-start;
+}
+
+.cards-item:last-child {
+   align-self: flex-end;
+}
+
+/******************************               STATISTICS - end              ******************************/
+
+/************************************             BOOST - start              ***************************************/
+
+.boost {
+   background: #3A3054;
+   padding: 57px 0;
+   background-image: url('./images/bg-boost-desktop.svg');
+   position: relative;
+}
+
+.boost-title {
+   font-weight: 700;
+   font-size: 40px;
+   line-height: 48px;
+   text-align: center;
+   letter-spacing: -1px;
+   color: #FFFFFF;
+   text-align: center;
+}
+
+.boost-btn-wrap {
+   text-align: center;
+   margin-top: 32px;
+}
+
+.boost-btn {
+   padding: 14px 40px 12px;
+   border: none;
+   background: #2BD0D0;
+   border-radius: 28px;
+   font-weight: 700;
+   font-size: 20px;
+   line-height: 30px;
+   color: #FFFFFF;
+}
+
+/************************************             BOOST - end              ***************************************/
+
+/************************************             FOOTER - start              ***************************************/
+
+.footer {
+   padding: 71px 165px 72px 163.53px;
+   display: flex;
+   background-color: #232127;
+}
+
+.footer-logo {
+   
+}
+
+.footer-nav {
+   display: flex;
+   margin-right: 101px;
+   margin-left: auto;
+}
+
+.box {
+   list-style: none;
+}
+
+.box a {
+   text-decoration: none;
+   font-weight: 500;
+   font-size: 15px;
+   line-height: 22px;
+   letter-spacing: -0.234375px;
+   color: #FFFFFF;
+}
+
+.box-title {
+   font-weight: 700;
+   font-size: 16px;
+   line-height: 24px;
+   letter-spacing: -0.25px;
+   color: #FFFFFF;
+}
+
+.resourse{
+   margin-left: 78px;
+   margin-right: 106px;
+}
+
+.icons {
+   display: flex;
+   gap: 24px;
+}
